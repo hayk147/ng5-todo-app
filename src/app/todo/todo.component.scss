@@ -1,0 +1,162 @@
+.line {
+  text-decoration: line-through;
+  color: rgb(121, 117, 117);
+}
+
+.row {
+  display: block;
+  overflow: hidden;
+  border-top: 1px solid #cfd6d6ad;
+}
+
+.checkbox-section {
+  border-right: 1px solid #fdbdc3;
+  padding: 6px 10px 7px 10px;
+}
+
+.word-section {
+  padding: 7px;
+  margin-left: 4px;
+  border-left: 1px solid #fdbdc3;
+  color: #8b8f97;
+}
+
+.plus {
+  padding: 15px 7px;
+}
+
+.last-row .word-section {
+  padding: 9px 7px;
+}
+
+.last-row {
+  border-top: 0px;
+}
+
+.table {
+  -webkit-box-shadow: 0 0 3px 2px #B0B0B0;
+  box-shadow: 0 0 3px 2px #B0B0B0;
+  color: #7e7f82;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 266px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.empty {
+  width: 40px;
+  height: 48px;
+  border-right: 1px solid #fdbdc3;
+}
+
+.last-row .empty {
+  height: 18px;
+}
+
+.add {
+  background-image: url(/assets/add.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 7px;
+  font-weight: 900;
+  cursor: pointer;
+
+}
+
+// checkbox
+
+input[type=checkbox].css-checkbox {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+  padding-left: 20px;
+  height: 17px;
+  display: inline-block;
+  line-height: 17px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 17px;
+  vertical-align: middle;
+  cursor: pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 -17px;
+}
+
+label.css-label {
+  background-image: url(/assets/checkbox.jpg);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.remove {
+  background-image: url(/assets/trash.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 15px;
+  height: 18px;
+  margin-right: 15px;
+  margin-top: 7px;
+  visibility: hidden;
+  cursor: pointer;
+
+}
+
+.row:hover .remove {
+  visibility: visible;
+}
+
+.w-98 {
+  margin-top: -3px !important;
+  width: 98%;
+  height: 3px;
+}
+
+.w-96 {
+  width: 96%;
+  height: 2px;
+}
+
+.w-94 {
+  width: 94%;
+  height: 2px;
+}
+
+.bottom-style {
+  border: 1px solid rgba(176, 176, 176, 0.30);
+  border-top: none;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 1px 1px 1px #B0B0B0;
+  box-shadow: 0 1px 1px 1px #B0B0B0;
+}
+

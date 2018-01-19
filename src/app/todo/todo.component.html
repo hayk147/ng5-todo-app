@@ -1,0 +1,24 @@
+<div class="d-inline-block">
+<div class="table">
+  <div class="row">
+    <div class="empty float-left"></div>
+    <div class="float-left word-section plus"><span (click)="addTask()" class="add"></span></div>
+  </div>
+  <div *ngFor="let task of tasks; let i=index" class="row">
+    <div class="checkbox-section float-left">
+      <input name="checkboxG{{i}}" id="checkboxG{{i}}" class="css-checkbox" type="checkbox" [checked]="task.completed" (change)="task.completed = !task.completed">
+      <label for="checkboxG{{i}}" class="css-label"></label>
+    </div>
+    <div class="word-section float-left" [ngClass]="{'line':task.completed === true}">{{ task.title }} <span ></span></div>
+    <div (click)="removeTask(i)" class="float-right remove"></div>
+  </div>
+  <div class="row last-row">
+    <div class="empty float-left"></div>
+    <div class="float-left word-section"></div>
+  </div>
+</div>
+<div class="w-98 bottom-style"></div>
+<div class="w-96 bottom-style"></div>
+<div class="w-94 bottom-style"></div>
+
+</div>
